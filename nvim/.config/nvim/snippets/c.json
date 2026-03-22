@@ -1,0 +1,14 @@
+{
+  "main with arguments": {
+    "prefix": "main",
+    "body": [
+      "int main(int argc, char **argv) {", "\t$0\n\treturn 0;", "}"
+    ]
+  },
+  "main without arguments": {
+    "prefix": "mainn",
+    "body": [
+      "int main(void) {", "\t$0\n\treturn 0;", "}"
+    ]
+  }
+}

@@ -1,12 +1,4 @@
-return {
-    "nvim-treesitter/nvim-treesitter", 
-    build = ":TSUpdate",
-    config = function()
-        local config = require("nvim-treesitter.configs")
-        config.setup({
-            ensure_installed = {"lua", "javascript", "c", "cpp", "java", "matlab", "python"},
-            highlight = { enable = true },
-            indent = { enable = true },  
-        })
-    end
-}
+vim.pack.add({
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter" }
+})
+
