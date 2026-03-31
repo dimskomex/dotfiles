@@ -10,9 +10,11 @@ vim.keymap.set({ 'n', 'x', 'v' }, '<leader>d', '"+d')
 vim.keymap.set({ 'n', 'x', 'v' }, '<leader>P', '"+P')
 vim.keymap.set({ "n", "t" }, "<leader>t", "<Cmd>tabnew<CR>")
 vim.keymap.set({ "n", "t" }, "<leader>x", "<Cmd>tabclose<CR>")
+vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], {noremap = true, silent = true})
 
 vim.keymap.set('v', '<Tab>', '>gv', { noremap = true, silent = true })
 vim.keymap.set('v', '<S-Tab>', '<gv', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>bd', '<Cmd>bdelete<CR>', { desc = 'Delete buffer' })
+vim.keymap.set('n', '<leader>E', '<Cmd>e $MYVIMRC<CR>')
 
