@@ -88,8 +88,8 @@ alias df="df -h"
 alias cat="bat --style plain --pager never"
 alias less="bat --style plain"
 alias free="free -m"
-alias e="$HOME/.local/share/bob/nvim-bin/nvim"
-alias vim="$HOME/.local/share/bob/nvim-bin/nvim"
+alias e="/usr/sbin/nvim"
+alias vim="/usr/sbin/nvim"
 
 ############################
 # FZF
@@ -150,8 +150,8 @@ export CXX="clang++"
 ############################
 
 # Neovim as default editor
-export VISUAL="$HOME/.local/share/bob/nvim-bin/nvim"
-export EDITOR="$HOME/.local/share/bob/nvim-bin/nvim"
+export VISUAL="/usr/bin/nvim"
+export EDITOR="/usr/bin/nvim-qt"
 
 # Use Neovim as man pager
 export MANPAGER="$HOME/.local/share/bob/nvim-bin/nvim +Man!"
@@ -163,7 +163,6 @@ export MANPAGER="$HOME/.local/share/bob/nvim-bin/nvim +Man!"
 
 # GHC / Haskell tooling
 [ -f "$HOME/.ghcup/env" ] && . "$HOME/.ghcup/env"
-
 [ -f "/home/dimskomex/.ghcup/env" ] && . "/home/dimskomex/.ghcup/env" # ghcup-env
 
 ############################
