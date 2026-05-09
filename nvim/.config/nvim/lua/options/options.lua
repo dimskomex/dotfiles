@@ -19,7 +19,7 @@ vim.opt.number = true
 vim.opt.signcolumn = "yes"
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
-vim.opt.colorcolumn = "100"
+vim.opt.colorcolumn = "80"
 
 -- Search
 vim.opt.ignorecase = true

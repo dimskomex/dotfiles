@@ -130,6 +130,10 @@
       "rev": "48b4175dbca8439d30c1f52231cbe5a712c8f9d9",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
+    "rust-tools.nvim": {
+      "rev": "676187908a1ce35ffcd727c654ed68d851299d3e",
+      "src": "https://github.com/simrat39/rust-tools.nvim"
+    },
     "telescope-ui-select.nvim": {
       "rev": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2",
       "src": "https://github.com/nvim-telescope/telescope-ui-select.nvim"

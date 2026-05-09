@@ -173,3 +173,17 @@ bind -x '"\C-g":tmux'
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+test -r '/home/dimskomex/.opam/opam-init/init.sh' && . '/home/dimskomex/.opam/opam-init/init.sh' > /dev/null 2> /dev/null || true
+# END opam configuration
+
+get_hex_x64() {
+    rasm2 -a x86 -b 64 "$1" \
+    | sed 's/../\\x&/g'
+}
