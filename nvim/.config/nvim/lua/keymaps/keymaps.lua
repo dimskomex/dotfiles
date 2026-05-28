@@ -1,3 +1,4 @@
+vim.keymap.set('n', '<C-n>', ':vnew<CR>')
 vim.keymap.set({'n', 'v'}, ';', ':')
 vim.keymap.set({'n', 'v'}, ':', ';')
 vim.keymap.set({'n', 'v'}, 'j', 'gj')

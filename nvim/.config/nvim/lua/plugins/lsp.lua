@@ -48,5 +48,7 @@ vim.lsp.config['prolog_lsp'] = {
 }
 
 vim.lsp.enable({
-    'lua_ls', 'clangd', 'hls', 'bashls', 'pylsp', 'texlab', 'prolog_lsp', 'rust_analyzer'
+    'lua_ls', 'clangd', 'hls', 'bashls',
+    'pylsp', 'texlab', 'prolog_lsp', 'rust_analyzer',
+    'typst'
 })
