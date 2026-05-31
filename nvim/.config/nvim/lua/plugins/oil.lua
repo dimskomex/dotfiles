@@ -8,7 +8,9 @@ require("oil").setup({
 	view_options = {
 		show_hidden = true
 	},
-	columns = {}
+	columns = {
+        "permissions"
+    }
 })
 
 vim.keymap.set('n', '<leader>e', ':Oil<CR>')
