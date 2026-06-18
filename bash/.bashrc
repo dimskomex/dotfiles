@@ -80,8 +80,8 @@ fi
 # ALIASES
 ############################
 
-alias ls="lsd"
-alias ll="lsd -lhA"
+alias ls="ls --color=always"
+alias ll="ls --color=always -lhA"
 alias rm="rm -i"
 alias tree="tree -C"
 alias df="df -h"
@@ -169,10 +169,10 @@ export MANPAGER="$HOME/.local/share/bob/nvim-bin/nvim +Man!"
 # Keybinds
 ############################
 
-bind -x '"\C-g":tmux'
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# bind -x '"\C-g":tmux'
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 
 # BEGIN opam configuration
@@ -191,3 +191,4 @@ get_hex_x64() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYO3_PYTHON=/usr/sbin/python3.12

@@ -13,3 +13,5 @@ end
 require_directory('plugins')
 require_directory('keymaps')
 require_directory('options')
+
+vim.cmd("colorscheme vesper")
