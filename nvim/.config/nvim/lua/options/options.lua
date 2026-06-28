@@ -1,14 +1,14 @@
 vim.cmd([[set mouse=]])
 vim.cmd([[set noswapfile]])
 vim.cmd([[hi @lsp.type.number gui=italic]])
-vim.cmd('set path+=**')
-vim.cmd('set wildmenu')
-vim.cmd('set nohlsearch')
-vim.cmd('let g:netrw_banner=0')
-vim.cmd('let g:netrw_browse_split=4')
-vim.cmd('let g:netrw_altv=1')
-vim.cmd('let g:netrw_liststyle=3')
-vim.cmd('let g:did_install_default_menus = 1')
+vim.cmd("set path+=**")
+vim.cmd("set wildmenu")
+vim.cmd("set nohlsearch")
+vim.cmd("let g:netrw_banner=0")
+vim.cmd("let g:netrw_browse_split=4")
+vim.cmd("let g:netrw_altv=1")
+vim.cmd("let g:netrw_liststyle=3")
+vim.cmd("let g:did_install_default_menus = 1")
 
 -- Window and display
 vim.opt.winborder = "rounded"
@@ -47,4 +47,3 @@ vim.filetype.add({
 		prolog = "prolog",
 	},
 })
-
