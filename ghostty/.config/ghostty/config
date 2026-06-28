@@ -1,4 +1,5 @@
 theme = Vesper
+# custom-shader = ~/.config/ghostty/shaders/gears-and-belts.glsl
 font-family = "GohuFont uni14 Nerd Font Mono"
 font-size = 14
 

@@ -169,19 +169,10 @@ export MANPAGER="$HOME/.local/share/bob/nvim-bin/nvim +Man!"
 # Keybinds
 ############################
 
-# bind -x '"\C-g":tmux'
-# export PYENV_ROOT="$HOME/.pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-
-
-# BEGIN opam configuration
-# This is useful if you're using opam as it adds:
-#   - the correct directories to the PATH
-#   - auto-completion for the opam binary
-# This section can be safely removed at any time if needed.
-test -r '/home/dimskomex/.opam/opam-init/init.sh' && . '/home/dimskomex/.opam/opam-init/init.sh' > /dev/null 2> /dev/null || true
-# END opam configuration
+bind -x '"\C-g":tmux'
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 get_hex_x64() {
     rasm2 -a x86 -b 64 "$1" \
@@ -190,5 +181,6 @@ get_hex_x64() {
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PYO3_PYTHON=/usr/sbin/python3.12
+
+# This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
